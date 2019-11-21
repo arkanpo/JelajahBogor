@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".konten_wisata2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/appBarLayout">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+
+            >
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:src="@color/grey_kecil"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:tint="@color/white"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/nama_curug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/latoregular"
+                    android:text="Family cacad"
+                    android:textColor="@color/blackprimary"
+                    android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:id="@+id/ratingview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/MyRatingBar"/>
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/txt_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FCD84A"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/mlight"
+                android:text="asdasdasdasda asdasdasdasd"
+                android:textColor="@color/blackprimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/j_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/latoregular"
+                android:text="Deskripsi"
+                android:textColor="@color/blackprimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:lineSpacingExtra="3dp"
+                android:fontFamily="@font/mlight"
+                android:text="dasdasdasdasdasdasdasdasdasdasdasdas"
+                android:textColor="@color/grey_kecil"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/j_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/latoregular"
+                android:text="Gallery"
+                android:textColor="@color/blackprimary"
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:scrollbars="none"
+              >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_marginRight="12dp"
+                        android:elevation="2dp"
+                        app:shape_roundRect_bottomLeftRadius="4dp"
+                        app:shape_roundRect_bottomRightRadius="4dp"
+                        app:shape_roundRect_topLeftRadius="4dp"
+                        app:shape_roundRect_topRightRadius="4dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@color/grey_kecil"/>
+
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_marginRight="12dp"
+                        android:elevation="2dp"
+                        app:shape_roundRect_bottomLeftRadius="4dp"
+                        app:shape_roundRect_bottomRightRadius="4dp"
+                        app:shape_roundRect_topLeftRadius="4dp"
+                        app:shape_roundRect_topRightRadius="4dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@color/grey_kecil"/>
+
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_marginRight="12dp"
+                        android:elevation="2dp"
+                        app:shape_roundRect_bottomLeftRadius="4dp"
+                        app:shape_roundRect_bottomRightRadius="4dp"
+                        app:shape_roundRect_topLeftRadius="4dp"
+                        app:shape_roundRect_topRightRadius="4dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@color/grey_kecil"/>
+
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/j_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/latoregular"
+                android:text="Rating This Place"
+                android:textColor="@color/blackprimary"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/mRating"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

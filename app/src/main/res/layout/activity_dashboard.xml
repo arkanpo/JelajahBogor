@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/foto_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:onClick="ShowPopUp"
+            android:id="@+id/photo_home_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avatar" />
+
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="56dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:src="@drawable/storial"
+        app:layout_constraintEnd_toStartOf="@+id/foto_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:fillColor="#FFFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp">
+    </com.synnapps.carouselview.CarouselView>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/mmedium"
+        android:text="Category"
+        android:textColor="#272727"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carousel" />
+
+    <TextView
+        android:id="@+id/lihat_semua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/mmedium"
+        android:text="Lihat Semua"
+        android:textColor="#00AEEF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carousel" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+                android:id="@+id/curug"
+                android:layout_width="150dp"
+                android:layout_height="112dp"
+                android:layout_marginRight="12dp"
+                android:elevation="4dp"
+                app:shape_roundRect_bottomLeftRadius="4dp"
+                app:shape_roundRect_bottomRightRadius="4dp"
+                app:shape_roundRect_topLeftRadius="4dp"
+                app:shape_roundRect_topRightRadius="4dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/airterjun" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/mmedium"
+                        android:text="Air Terjun"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+                android:id="@+id/cafe"
+                android:layout_width="150dp"
+                android:layout_height="112dp"
+                android:layout_marginRight="12dp"
+                android:elevation="4dp"
+                app:shape_roundRect_bottomLeftRadius="4dp"
+                app:shape_roundRect_bottomRightRadius="4dp"
+                app:shape_roundRect_topLeftRadius="4dp"
+                app:shape_roundRect_topRightRadius="4dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cafe2" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/mmedium"
+                        android:text="Cafe"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+                android:id="@+id/taman"
+                android:layout_width="150dp"
+                android:layout_height="112dp"
+                android:layout_marginRight="12dp"
+                android:elevation="4dp"
+                app:shape_roundRect_bottomLeftRadius="4dp"
+                app:shape_roundRect_bottomRightRadius="4dp"
+                app:shape_roundRect_topLeftRadius="4dp"
+                app:shape_roundRect_topRightRadius="4dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/taman" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/mmedium"
+                        android:text="Taman"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/mmedium"
+        android:text="Favorite"
+        android:textColor="#272727"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

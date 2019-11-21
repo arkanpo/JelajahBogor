@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "226288095232",
+    "firebase_url": "https://jelajahbogor-3cc7c.firebaseio.com",
+    "project_id": "jelajahbogor-3cc7c",
+    "storage_bucket": "jelajahbogor-3cc7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226288095232:android:d0d6cd2b0360ae9a",
+        "android_client_info": {
+          "package_name": "com.example.jelajahbogor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226288095232-4md7k76tp9mb4kc24df0me5m0n7gtjdi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jelajahbogor",
+            "certificate_hash": "3fa158679669004a6bfe1ae337e536a47200d23f"
+          }
+        },
+        {
+          "client_id": "226288095232-n0i3394cbstteq9ssa2viu624bmi0444.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFFAx9leXdxwslNa5J_AwHDMlNOhn0w9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226288095232-n0i3394cbstteq9ssa2viu624bmi0444.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
